@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minha loja de jogos</title>
+	<style>
+		body {
+			background-color: #171a21;
+			color: #f2f2f2;
+			font-family: "Helvetica Neue", sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #2e2f31;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		header img {
+			height: 50px;
+			margin-right: 20px;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+		}
+		nav li {
+			margin-right: 20px;
+			font-size: 16px;
+			font-weight: bold;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+		nav li:hover {
+			color: #8a8a8a;
+		}
+		nav li.active {
+			color: white;
+			border-bottom: 2px solid white;
+		}
+		main {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		section {
+			width: 100%;
+			margin-top: 40px;
+		}
+		.game {
+			width: 30%;
+			margin-bottom: 40px;
+			padding: 20px;
+			background-color: #282828;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 5px;
+			transition: all 0.3s ease-in-out;
+		}
+		.game:hover {
+			transform: translateY(-5px);
+			box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+		}
+		.game img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			margin-bottom: 10px;
+			border-radius: 5px;
+		}
+		.game h3 {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		.game p {
+			font-size: 14px;
+			margin-bottom: 10px;
+			height: 80px;
+			overflow: hidden;
+		}
+		.game a {
+			display: block;
+			padding: 10px 20px;
+			background-color: #0f9d58;
+			color: white;
+			border-radius: 5px;
+			text-align: center;
+			text-decoration: none;
+			transition: all 0.3s ease-in-out;
+		}
+		.game a:hover {
+			background-color: #0c7
+		}
+		#img-canto {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			z-index: 999;
+		
+    </style>
+	<script>
+      function exibirMensagem() {
+        alert("Compra efetuada,você gastou 500,00$");
+      }
+    </script>
+	<script>
+      function exibirMensagem1() {
+        alert("Compra efetuada,você gastou 720,99$");
+      }
+    </script>
+	<script>
+      function exibirMensagem2() {
+        alert("Compra efetuada,você gastou 20,99$");
+      }
+    </script>
+
+</head>
+    <body>
+    <header>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="jogos.html">Jogos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<img src="imgs/controle.png" alt="Imagem" width="50" height="50" />
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+	
+        <section>
+			<h1>Jogos novos</h1>
+			<ul>
+				<li>
+					<h2>Call of Gruty</h2>
+					<img src= "imgs/gru.jpg" alt="Call of Gruty"  windth="360" height="400">
+					<p>Call of Gruty é uma franquia de jogos eletrônicos de tiro em primeira pessoa publicada pela Noinsivitca.<br>
+						O primeiro título da série foi lançado em 2020 e começou nos caixas eletronicos, mais tarde a série 
+						se<br> expandiu para os mais variados consoles, portáteis e smartphones.</p>
+						<a href="cog.html" style="color: red ;">Comprar agora (bonus de pré venda)</a>
+				</li>
+				<li>
+					<h3>Chinescraft</h3>
+					<img src="imgs/chinescraft.jpg" alt="minecraft" windth="360" height="445">
+					<p>Bota bloco Blasileilo safado</p>
+					<a href="chinescraft.html" style="color: red ;">Comprar agora </a>
+				</li>
+				<li>
+					<h4>Cinco noites com o eduardo 2</h4>
+					<img src="imgs/eduardo.jpg" alt="fnaf"  windth="360" height="400"> 
+					<p>Sera que você ira aguentar as cinco noitadas com o Eduardo e seus amigos do balacobaco?</p>
+					<a href="eduardo.html" style="color: red ;">Comprar agora </a>
+				</li>
+			</ul>
+		</section>
+        <section>
+			<h1>Jogos Brasileiros</h1>
+			<ul>
+				<li>
+					<h2>Bomba Patch 2023 (IMORTAL DELUXE EDITION)</h2>
+					<img src="imgs/BombaP.jpg" alt="bomba patch"  windth="360" height="400">
+					<p>Cem por cento atualizado é ruim de aturar Bomba patch virou moda todo mundo quer jogar... </p>
+					<a onclick="exibirMensagem2()" style="color: red ;">Comprar agora</a>
+				</li>
+				<li>
+					<h3>GTA Dragon Ball edition</h3>
+					<img src="imgs/GTAdb.jpg" alt="gtamod"  windth="360" height="535">
+					<p>Vegeta perde todo o seu ki e vai resolver as coisas com o jiren na bala</p>
+					<a onclick="exibirMensagem()" style="color: red ;">Comprar agora (com desconto)</a>
+				</li>
+					<h4>171</h4>
+								<li>
+	<img src="imgs/gta171.jpg" alt="171"  windth="240" height="400">
+					<p>O famoso gta brasileiro</p>
+					<a onclick="exibirMensagem()" style="color: red ;">Comprar agora</a>
+				</li>
+			</ul>
+		</section>
+        <section>
+ 			<ul>
+				<li>
+					<h2>Dragon Ball Lagends</h2>
+					<img src="imgs/DBlagends.jpg" alt="Dragon Ball  windth="240" height="400">
+					<p>O jogo de ação anime definitivo já está aqui!<br> DRAGON BALL LEGENDS coloca nas tuas
+						 mãos o poder dos teus heróis favoritos de DRAGON BALL!</p>
+						 <a onclick="exibirMensagem()" style="color: red ;">Comprar agora</a>
+				</li>
+				<li>
+					<h3>Jump Force</h3>
+					<img src="imgs/jumpForce.jpg" alt="jumpForce"  windth="240" height="400">
+					<p>Unidos para enfrentar uma ameaça perigosa,<br> a Jump Force é responsável pelo destino de toda a humanidade</p>
+					<a onclick="exibirMensagem()" style="color: red ;">Comprar agora</a>
+				</li>
+				<li>
+					<h4>Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles</h4>
+					<img src="imgs/Ds.jpg" alt="Kimetsu"  windth="240" height="400">
+					<p>Torne-se a lâmina que destrói demônios!<br> siga Tanjiro através da história do anime Demon Slayer</p>
+					<a onclick="exibirMensagem()" style="color: red ;">Comprar agora</a>
+				</li>
+			</ul>
+		</section>
+        <section>
+			<h1>Terror</h1>
+			<ul>
+				<li>
+					<h2>SilentHill</h2>
+					<img src="imgs/silenthill.jpg" alt="silenthill"  windth="240" height="400">
+					<p>O game tem como protagonista Harry Manson, pai adotivo de uma menina de sete anos chamada Cheryl.<br>
+						 Ambos saem de férias para a pacata cidade de Silent Hill, porém, sofrem um acidente de carro no caminho.<br>
+						 Ao acordar, Harry vê sua filha desaparecer dentro da cidade coberta pela névoa.</p>
+						 <a onclick="exibirMensagem()" style="color: red ;">Comprar agora</a>
+				</li>
+				<li>
+					<h3>Resident Evil 4</h3>
+					<img src="imgs/RE4.jpg" alt="RE4"  windth="240" height="400">
+					<p>A história segue o agente especial Leon S. Kennedy, que é enviado em uma
+						 missão <br>para resgatar a filha do presidente dos Estados Unidos, 
+						Ashley Graham, que foi sequestrada<br> por um culto religioso em uma parte rural da Espanha.</p>
+						<a onclick="exibirMensagem()" style="color: red ;">Comprar agora</a>
+				</li>
+				<li>
+					<h4>The Baby In Yellow</h4>
+					<img src="imgs/terror1.jpg" alt="terror" windth="240" height="535">
+					<p>The Baby In Yellow é um simulador de terror com perspectiva em primeira pessoa.<br>
+						 Nele, o jogador vive uma babá que trabalha cuidando de um bebê dentro de uma mansão.<br>
+						O grande problema é que esse bebê não é uma criança comum,<br> e 
+						começa a apresentar comportamentos perturbadores</p>
+						<a onclick="exibirMensagem()" style="color: red ;">Comprar agora (DLC inclusa)</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 - Lojinha do Crebsu</p>
+	</footer>
+	<img src="imgs/scorpion.png" id="img-canto" width="500" height="500" alt="Imagem de canto">
+	
+</body>
+</html>

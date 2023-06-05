@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Página Inicial</title>
+	<style>
+		body {
+			background-color: #171a21;
+			color: white;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			padding: 0 30px;
+			box-sizing: border-box;
+		}
+
+		h1 {
+			font-size: 48px;
+			margin-bottom: 50px;
+			letter-spacing: 8px;
+			text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+		}
+
+		button {
+			background: linear-gradient(#4c4f5a, #31353d);
+			border: none;
+			border-radius: 50px;
+			color: white;
+			font-size: 24px;
+			padding: 15px 50px;
+			cursor: pointer;
+			text-transform: uppercase;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		}
+
+		button:hover {
+			background: linear-gradient(#31353d, #4c4f5a);
+			box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+		}
+		#img-canto {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			z-index: 999;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Lojinha do Crebsu</h1>
+		<button><a href="home.html">INICIAR</a></button>
+	</div>
+	<img src="imgs/ghostCanto.png" id="img-canto" width="400" height="500" alt="Ghost">
+</body>
+</html>

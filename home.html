@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minha loja de jogos</title>
+	<style>
+		body {
+			background-color: #171a21;
+			color: #f2f2f2;
+			font-family: "Helvetica Neue", sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #2e2f31;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		header img {
+			height: 50px;
+			margin-right: 20px;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+		}
+		nav li {
+			margin-right: 20px;
+			font-size: 16px;
+			font-weight: bold;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+		nav li:hover {
+			color: #8a8a8a;
+		}
+		nav li.active {
+			color: white;
+			border-bottom: 2px solid white;
+		}
+		main {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		section {
+			width: 100%;
+			margin-top: 40px;
+		}
+		.game {
+			width: 30%;
+			margin-bottom: 40px;
+			padding: 20px;
+			background-color: #282828;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 5px;
+			transition: all 0.3s ease-in-out;
+		}
+		.game:hover {
+			transform: translateY(-5px);
+			box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+		}
+		.game img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			margin-bottom: 10px;
+			border-radius: 5px;
+		}
+		.game h3 {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		.game p {
+			font-size: 14px;
+			margin-bottom: 10px;
+			height: 80px;
+			overflow: hidden;
+		}
+		.game a {
+			display: block;
+			padding: 10px 20px;
+			background-color: #0f9d58;
+			color: white;
+			border-radius: 5px;
+			text-align: center;
+			text-decoration: none;
+			transition: all 0.3s ease-in-out;
+		}
+		.game a:hover {
+			background-color: #0c7
+    </style>
+	<script>
+      function exibirMensagem() {
+        alert("Compra efetuada, você gastou 500,00$");
+      }
+    </script>
+	<script>
+      function exibirMensagem2() {
+        alert("Compra efetuada,você gastou 20,99$");
+      }
+    </script>
+    <body>
+    <header>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="jogos.html">Jogos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<img src="imgs/controle.png" alt="Imagem" width="50" height="50" />
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<h1>Bem-vindo à nossa loja de jogos online</h1>
+		<p>Aqui você encontrará os melhores jogos para todas as plataformas, como Playstation, Xbox e PC. Nós temos tudo, desde os jogos mais recentes até os clássicos que você adora.</p>
+		<section>
+			<h2>Nossos jogos em destaque</h2>
+			<ul>
+				<li>
+					<h2>Call of Gruty</h2>
+					<img src= "imgs/gru.jpg" alt="Call of Gruty"  windth="360" height="400">
+					<p>Call of Gruty é uma franquia de jogos eletrônicos de tiro em primeira pessoa publicada pela Noinsivitca. <br>
+						O primeiro título da série foi lançado em 2020 e começou nos caixas eletronicos, mais tarde a série <br>
+						se expandiu para os mais variados consoles, portáteis e smartphones.</p>
+						<a href="cog.html" style="color: red ;"> Comprar agora (Bonus de pré venda)</a>
+				</li>
+				<li>
+					<h3>Bomba Patch 2023 (IMORTAL DELUXE EDITION)</h3>
+					<img src="imgs/BombaP.jpg" alt="bomba patch"  windth="360" height="400">
+					<p>Cem por cento atualizado é ruim de aturar Bomba patch virou moda todo mundo quer jogar... </p>
+					<a onclick="exibirMensagem2()" style="color: red ";>Comprar agora</a>
+				</li>
+				<li>
+					<h4>171</h4>
+					<img src="imgs/gta171.jpg" alt="171" ="240" height="400">
+					<p>O famoso gta brasileiro</p>
+					<a onclick="exibirMensagem()" style="color: red ";>Comprar agora</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 - Lojinha do Crebsu</p>
+	</footer>
+</body>
